@@ -1,20 +1,31 @@
+# ===========================================
+# RaikouHUD Main Configuration
+# Global plugin behavior and shared settings.
+# ===========================================
+
 plugin:
+  # Enables additional debug logs in console.
   debug: false
 
 locale:
+  # Active language file.
   default: en_US
+  # Fallback language if a key is missing in the default locale.
   fallback: en_US
 
 integrations:
+  # Enables PlaceholderAPI resolver if PlaceholderAPI is installed.
   placeholderapi: true
 
 modules:
+  # Global toggles for each HUD module.
   scoreboard: true
   bossbar: true
   actionbar: true
   tab: true
 
 performance:
+  # Minimum allowed update interval for modules (ticks).
   min-update-interval-ticks: 10
+  # Delay before first HUD render after player join (ticks).
   join-init-delay-ticks: 1
-

@@ -1,6 +1,16 @@
+# ===========================================
+# RaikouHUD ActionBar Module Configuration
+# Controls actionbar text rendering.
+# ===========================================
+
 actionbar:
+  # Master toggle for the actionbar module.
   enabled: true
+  # Refresh interval in ticks.
   update-interval-ticks: 20
+  # Optional permission required to view this module.
   permission: ""
+  # World names where this module is disabled.
   disabled-worlds: []
+  # Actionbar message (MiniMessage + placeholders).
   message: "<yellow>Ping</yellow> <white>%player_ping%ms</white> <gray>|</gray> <yellow>X:</yellow><white>%player_x%</white> <yellow>Y:</yellow><white>%player_y%</white> <yellow>Z:</yellow><white>%player_z%</white>"

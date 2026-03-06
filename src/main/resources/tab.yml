@@ -1,11 +1,22 @@
+# ===========================================
+# RaikouHUD TAB Module Configuration
+# Controls player list header/footer formatting.
+# ===========================================
+
 tab:
+  # Master toggle for the TAB module.
   enabled: true
+  # Refresh interval in ticks.
   update-interval-ticks: 40
+  # Optional permission required to view this module.
   permission: ""
+  # World names where this module is disabled.
   disabled-worlds: []
   header:
+    # Header lines (MiniMessage + placeholders).
     - "<gold><bold>RaikouHUD</bold></gold>"
     - "<gray>Online: <white>%server_online%</white></gray>"
   footer:
+    # Footer lines (MiniMessage + placeholders).
     - "<gray>TPS: <white>%server_tps_1m%</white></gray>"
     - "<gray>Enjoy your game!</gray>"

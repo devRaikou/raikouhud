@@ -1,10 +1,23 @@
+# ===========================================
+# RaikouHUD Scoreboard Module Configuration
+# Controls sidebar scoreboard behavior.
+# ===========================================
+
 scoreboard:
+  # Master toggle for the scoreboard module.
   enabled: true
+  # Refresh interval in ticks (20 ticks = 1 second).
   update-interval-ticks: 20
+  # SOFT: keep another plugin's sidebar if already active.
+  # STRICT: always attempt to take over the sidebar.
   takeover-mode: SOFT
+  # Optional permission required to view this module.
   permission: ""
+  # World names where this module is disabled.
   disabled-worlds: []
+  # Scoreboard title (MiniMessage format).
   title: "<aqua><bold>RaikouHUD</bold></aqua>"
+  # Up to 15 lines are shown. Supports MiniMessage and placeholders.
   lines:
     - "<gray>Player: <white>%player_name%</white></gray>"
     - "<gray>Ping: <green>%player_ping%ms</green></gray>"

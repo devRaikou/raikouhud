@@ -1,12 +1,29 @@
+# ===========================================
+# RaikouHUD BossBar Module Configuration
+# Controls top bossbar rendering.
+# ===========================================
+
 bossbar:
+  # Master toggle for the bossbar module.
   enabled: true
+  # Refresh interval in ticks.
   update-interval-ticks: 20
+  # Optional permission required to view this module.
   permission: ""
+  # World names where this module is disabled.
   disabled-worlds: []
+  # Bar color (Bukkit BarColor enum).
   color: BLUE
+  # Bar style (Bukkit BarStyle enum).
   style: SEGMENTED_10
+  # Bossbar title (MiniMessage + placeholders).
   title: "<aqua>%player_name%</aqua> <gray>|</gray> <white>%server_tps_1m% TPS</white>"
   progress:
+    # STATIC uses static-value.
+    # PLACEHOLDER parses placeholder output as progress.
     mode: STATIC
+    # Fixed progress value between 0.0 and 1.0.
     static-value: 1.0
+    # Used when mode = PLACEHOLDER.
+    # Expected output: 0.0..1.0 or 0..100.
     placeholder: "%player_health_ratio%"
